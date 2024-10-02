@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+
+.navbar{
+    width: 100% !important;
+    height: 200px;
+}
 body {
     font-family: 'Roboto', sans-serif;
     background-image: url('background-food.jpg');
