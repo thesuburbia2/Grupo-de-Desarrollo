@@ -7,9 +7,6 @@
 }
 
 
-.navbar{
-    width: 100% !important;
-}
 body {
     font-family: 'Nunito', sans-serif;
     background-image: url('../imagenes/login-background.jpg');
@@ -22,51 +19,6 @@ body {
     color: black;
 }
 
-header {
-    width: 100%;
-    background-color: #FF6200;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: white;
-}
-
-.logo span {
-    color: #FFF500;
-}
-
-.search-bar input {
-    width: 300px;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-}
-
-.header-icons {
-    display: flex;
-    align-items: center;
-}
-
-.header-icons a {
-    margin-left: 20px;
-}
-
-.profile-btn {
-    background-color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    color: #FF6200;
-}
-
 main {
     display: flex;
     justify-content: center;
@@ -74,15 +26,19 @@ main {
     width: 100%;
 }
 
+.navbar {
+    width: 100% !important;
+}
+
 .login-container {
     background-color: white;
-    opacity: 90%;
-    padding: 40px;
+    opacity: 95%;
+    padding: 60px;
     border-radius: 20px;
-    max-width: 500px;
+    max-width: 650px;
     width: 100%;
-    text-align: center;
     margin: 50px;
+    text-align: center;
 }
 
 .login-container h2 {
@@ -117,23 +73,31 @@ main {
     margin-bottom: 20px;
 }
 
-.login-btn {
-    background-color: #FF6200;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 .forgot-password {
-    font-size: 12px;
-    color: #FF6200;
+    display: flex;
+    justify-content: flex-end;
+    color: black;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .remember {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.noAccount {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.register {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #FF6200;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .remember input {
@@ -149,25 +113,34 @@ p {
     flex-direction: column;
 }
 
-.facebook-btn, .google-btn {
+.btn {
     width: 100%;
+    color: white;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
+    height: 40px;
     margin-bottom: 10px;
+    margin-top: 10px;
     cursor: pointer;
+}
+
+.btn i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.login-btn {
+    background-color: #FF6200;
 }
 
 .facebook-btn {
     background-color: #3b5998;
-    color: white;
 }
 
 .google-btn {
     background-color: #dd4b39;
-    color: white;
 }
-
 
 .input-wrapper {
     position: relative;
