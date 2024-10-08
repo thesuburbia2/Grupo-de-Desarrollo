@@ -21,57 +21,39 @@ body {
 
 .carousel-container {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    animation: slide-animation 12s infinite;
 }
 
 .carousel-slide {
     display: flex;
+    width: 200%; /* Ajustado para mostrar dos imágenes al mismo tiempo */
 }
 
 .carousel-item {
-    min-width: 100%;
+    min-width: 50%; /* Cada imagen ocupará el 50% del ancho del carrusel */
     transition: transform 0.5s ease;
     position: relative;
 }
 
 .carousel-item img {
-    width: 100%;
+    width: 90%; /* Ajusta el tamaño de las imágenes dentro del contenedor */
     border-radius: 10px;
+    height: 250px;
 }
 
 .carousel-caption {
     position: absolute;
     bottom: 20px;
-    left: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
+    left: 30px;
+    background-color: rgba(0, 0, 0, 0.233);
     color: #fff;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 5px;
     text-align: left;
 }
 
 .carousel h2 {
     margin-bottom: 20px;
-}
-
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
 }
 
 .carousel-indicators {
@@ -91,4 +73,29 @@ body {
 
 .indicator.active {
     background-color: #333;
+}
+
+/* Animación automática */
+@keyframes slide-animation {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-50%);
+    }
+    58% {
+        transform: translateX(-50%);
+    }
+    66% {
+        transform: translateX(-100%);
+    }
+    91% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-150%);
+    }
 }

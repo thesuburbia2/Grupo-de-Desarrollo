@@ -8,6 +8,17 @@
     height: 200px;
 }
 
+.carrusel{
+    width: 100% !important;
+    height: 370px;
+}
+
+.grid_products{
+    padding: 0%;
+    width: 100% !important;
+    height: 1000px;  
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
