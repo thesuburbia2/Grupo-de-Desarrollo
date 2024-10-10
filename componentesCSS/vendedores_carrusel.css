@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Nunito;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel {
+    background: #ffffff;
+    border-radius: 30px;
+    position: relative;
+    padding: 40px;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    animation: slide-animation 30s linear infinite; /* Duración más larga y animación lineal */
+}
+.carousel-slide {
+    display: flex;
+    width: 100%; /* Ajustado para mostrar dos imágenes al mismo tiempo */
+}
+
+.carousel-item {
+    min-width: 15%; /* Cada imagen ocupará el 20% del ancho del carrusel */
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 150px; /* Ajusta el tamaño para que sea cuadrado */
+    height: 150px; /* Mismo tamaño para el alto */
+    border-radius: 50%; /* Asegura que las imágenes sean circulares */
+    object-fit: cover; /* Asegura que las imágenes llenen el contenedor circular */
+}
+
+
+.carousel-caption {
+    position: relative;
+    color: #000000;
+    padding-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.carousel h2 {
+    margin-bottom: 20px;
+}
+
+
+ul, li {
+    list-style-type: none;
+}
+
+
+
+/* Animación automática */
+@keyframes slide-animation {
+    0% {
+        transform: translateX(0);
+    }
+    90% {
+        transform: translateX(-76%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}

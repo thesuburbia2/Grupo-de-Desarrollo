@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Nunito;
     background-color: #f8f8f8;
     padding: 20px;
 }
@@ -13,19 +13,21 @@ body {
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columnas */
-    gap: 50px; /* Espacio entre las tarjetas */
-    margin: 0px;
+    gap: 10px; /* Espacio entre las tarjetas */
+    margin: 10px;
 }
 
 .product-card {
+    scale: 80%;
     background-color: #fdd6b2;
     border-radius: 15px;
     width: 250px;
+    height: 380px;
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     text-align: center;
-
+}
 .product-card:hover {
     transform: translateY(-10px); /* Efecto hover al pasar sobre la tarjeta */
 }
@@ -94,7 +96,7 @@ body {
     border-radius: 50%;
     margin-right: 10px;
 }
-}
+
 
 .store-details p {
     font-size: 14px;

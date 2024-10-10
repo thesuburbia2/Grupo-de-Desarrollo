@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Nunito;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    padding-top: 15px;
+    max-width: 100%;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 30px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+}
+
+.category {
+    scale: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    background-color: #313131;
+    border-radius: 16px;
+    padding-bottom: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category img {
+    border-radius: 15px;
+    margin-top:0px;
+    height:200px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  
+
+}
+
+.category p {
+    font-size: 23px;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+/* Specific styles for each category */
+
+#comidas_preparadas {
+    background-color: #AA0009;
+}
+
+#Helados {
+    background-color: #3DD2FB;
+}
+
+#Frutas_Verduras {
+    background-color: #B0C96D;
+}
+
+#Bebidas {
+    background-color: #1d1d1d;
+}
+
+#Snacks {
+    background-color: #FB880B;
+}
