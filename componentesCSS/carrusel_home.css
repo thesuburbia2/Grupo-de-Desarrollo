@@ -71,6 +71,11 @@ body {
     cursor: pointer;
 }
 
+ul, li {
+    list-style-type: none;
+}
+
+
 .indicator.active {
     background-color: #333;
 }

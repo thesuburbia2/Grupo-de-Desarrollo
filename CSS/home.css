@@ -33,6 +33,12 @@
     height: 1000px;  
 }
 
+.footer{
+    width: 100% !important;
+    height:250px;
+}
+
+
 .categories {
    padding-top: 0px;
 }

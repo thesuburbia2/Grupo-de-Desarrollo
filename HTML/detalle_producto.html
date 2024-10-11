@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="../CSS/detalle_producto.css">
     <iframe class="navbar"src="../componentesHTML/navbar.html" frameborder="0"></iframe>
 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+    </style>
+
 </head>
 <body>
     
@@ -14,13 +18,24 @@
     <main>
         <div class="product-section">
             <div class="product-image">
-                <img src="burger.jpg" alt="Hamburguesa doble carne con cheddar">
+                <img src="../imagenes/detalle_producto/Burger.png" alt="Hamburguesa extra carne con cheddar">
             </div>
             <div class="product-details">
-                <h2>Hamburguesa doble carne con cheddar</h2>
+                <div class="titles">
+                    <h2>Hamburguesa Extra Carne con Cheddar</h2> <h3>hasta 50% de descuento</h3>
+                </div>
+                <div class="prices">
+                    <div class="current_price">
+                        <h3>$ 4990</h3>
+                    </div>
+
+                    <div class="old_price">
+                        <h3>$ 10.900</h3>
+                    </div>
+                </div>
                 <div class="rating">
-                    <span>★★★★★</span>
-                    <p>puntuación del producto</p>
+                    <span>★★★★★ 5/5</span>
+                    <h4>puntuación del producto</h4>
                 </div>
                 <p>Disfruta de la auténtica experiencia de sabor con nuestra icónica hamburguesa doble carne con cheddar. Dos jugosas porciones de carne 100% vacuna, sazonadas a la perfección, se fusionan con el cremoso y derretido queso cheddar que le da un toque inconfundible.</p>
                 <div class="buttons">
@@ -31,42 +46,29 @@
         </div>
 
         <div class="vendor-section">
+
             <div class="vendor-info">
-                <img src="mcdonalds-logo.png" alt="McDonald's Logo">
-                <p>McDonald's Portal</p>
+                <img src="../imagenes/vendedores/mcdonalds.png" alt="McDonald's Logo">
+                <h4>McDonald's Portal</h4>
                 <div class="vendor-rating">
                     <span>4,9/5</span>
-                    <p>puntuación del vendedor</p>
+                    <h4>puntuación del vendedor</h4>
                 </div>
             </div>
 
-            <div class="related-products">
-                <div class="related-item">
-                    <img src="sushi.jpg" alt="Sushi">
-                    <p>Sushi Rolls de Salmón y Olivada negra</p>
-                    <p class="price"><span class="discounted">$14.990</span> <span class="original">$30.900</span></p>
-                    <span class="rating">2,9/5 ★</span>
-                </div>
-                <div class="related-item">
-                    <img src="ice-cream.jpg" alt="Helado">
-                    <p>Helado 1kg (hasta 4 sabores)</p>
-                    <p class="price"><span class="discounted">$17.800</span> <span class="original">$19.900</span></p>
-                    <span class="rating">4,5/5 ★</span>
-                </div>
-                <div class="related-item">
-                    <img src="calamari.jpg" alt="Rabas">
-                    <p>Rabas para 2 personas</p>
-                    <p class="price">$8.890</p>
-                    <span class="rating">4/5 ★</span>
-                </div>
-                <div class="related-item">
-                    <img src="pizza.jpg" alt="Sorrentinos">
-                    <p>Sorrentinos de Jamón y queso</p>
-                    <p class="price">$9.999</p>
-                    <span class="rating">4,9/5 ★</span>
-                </div>
-            </div>
         </div>
+
+
+        <section class="grid_products">
+            <iframe class="grid_products" src="../componentesHTML/grid_inicio.html" frameborder="0"></iframe>
+        </section>
+
+
     </main>
+
+    <footer>
+        <iframe class="footer" src="../componentesHTML/footer.html" frameborder="0"></iframe>
+    </footer>
+
 </body>
 </html>
