@@ -10,6 +10,12 @@
     height: 200px;
 }
 
+.footer{
+    width: 100% !important;
+    height:250px;
+}
+
+
 
 body {
     background-color: #f8f8f8;
@@ -70,7 +76,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center; /* Alinea los elementos hijos horizontalmente */
-    padding: 20px;
+    padding-left: 60px;
+    
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
     margin: 0 auto; /* Centra el contenedor */
@@ -80,7 +87,6 @@ header {
     display: flex;
     width: 600px;
     height: auto;
-
     border-radius: 30px;
 }
 
@@ -123,8 +129,10 @@ header {
 .prices {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    margin-left: 125px;
+    
 }
 
 .product-details {
@@ -213,11 +221,14 @@ header {
 }
 
 .vendor-section {
+    width: 70%;
     display: flex;
+    border-radius: 40px;
     justify-content: center;
     margin-top: 20px;
-    padding: 20px;
+    
     background-color: white;
+    margin: 0 auto;
 }
 
 .vendor-info {
@@ -256,3 +267,8 @@ header {
 }
 
 
+.grid_products{
+    padding: 0%;
+    width: 100% !important;
+    height: 1000px; 
+}
