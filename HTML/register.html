@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnackWay - Registro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/register.css">
+    <iframe class="navbar" src="../componentesHTML/navbar.html" frameborder="0"></iframe>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h2>Registrarse</h2>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="firstName">Nombre</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="firstName" name="firstName" required>
+                        <i class="fa-solid fa-check" id="firstNameCheck" style="display: none;"></i>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="lastName">Apellido</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="lastName" name="lastName" required>
+                        <i class="fa-solid fa-check" id="lastNameCheck" style="display: none;"></i>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <div class="input-wrapper">
+                        <input type="email" id="email" name="email" required>
+                        <i class="fa-solid fa-check" id="emailCheck" style="display: none;"></i>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="password">Contraseña</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="password" name="password" required>
+                        <i class="fa-solid fa-eye-slash" id="togglePassword"></i>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="confirmPass">Confirmar contraseña</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="confirmPass" name="confirmPass" required>
+                        <i class="fa-solid fa-eye-slash" id="toggleConfirmPassword"></i>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button type="submit" class="btn login-btn">REGISTRARSE</button>
+                </div>
+                <p class="noAccount">Ya tenés una cuenta?<a class="register" href="/HTML/login.html">Iniciar sesión</a>
+                </p>
+                <div class="social-login">
+                    <button class="btn facebook-btn">
+                        <i class="fa-brands fa-facebook-f"></i> REGISTRASE CON FACEBOOK
+                    </button>
+                    <button class="btn google-btn">
+                        <i class="fa-brands fa-google"></i> REGISTRASE CON GOOGLE
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+<script>
+    const firstNameInput = document.querySelector("#firstName");
+    const lastNameInput = document.querySelector("#lastName");
+    const emailInput = document.querySelector("#email");
+    const passwordInput = document.querySelector("#password");
+    const confirmPassInput = document.querySelector("#confirmPass");
+
+    const firstNameCheck = document.querySelector("#firstNameCheck");
+    const lastNameCheck = document.querySelector("#lastNameCheck");
+    const emailCheck = document.querySelector("#emailCheck");
+    const passwordCheck = document.querySelector("#passwordCheck");
+    const confirmPassCheck = document.querySelector("#confirmPassCheck");
+
+    const togglePassword = document.querySelector("#togglePassword");
+    const toggleConfirmPassword = document.querySelector("#toggleConfirmPassword");
+
+    togglePassword.addEventListener("click", function () {
+        const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+        passwordInput.setAttribute("type", type);
+        togglePassword.classList.toggle("fa-eye");
+        togglePassword.classList.toggle("fa-eye-slash");
+    });
+
+    toggleConfirmPassword.addEventListener("click", function () {
+        const type = confirmPassInput.getAttribute("type") === "password" ? "text" : "password";
+        confirmPassInput.setAttribute("type", type);
+        toggleConfirmPassword.classList.toggle("fa-eye");
+        toggleConfirmPassword.classList.toggle("fa-eye-slash");
+    });
+
+    emailInput.addEventListener("input", function () {
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (emailPattern.test(emailInput.value)) {
+            emailCheck.style.display = "inline";
+        } else {
+            emailCheck.style.display = "none";
+        }
+    });
+
+    function validateName(input, checkIcon) {
+        if (input.value.trim().length > 2) {
+            checkIcon.style.display = "inline";
+        } else {
+            checkIcon.style.display = "none";
+        }
+    }
+
+    firstNameInput.addEventListener("input", function () {
+        validateName(firstNameInput, firstNameCheck);
+    });
+
+    lastNameInput.addEventListener("input", function () {
+        validateName(lastNameInput, lastNameCheck);
+    });
+
+</script>
+
+</html>
