@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Nunito', sans-serif;
-    background-image: url('../imagenes/login-background.jpg');
+    background-image: url('../imagenes/register-background.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -50,7 +50,6 @@ main {
 .input-group {
     margin-bottom: 20px;
     text-align: left;
-    font-weight: bold;
 }
 
 .input-group label {
