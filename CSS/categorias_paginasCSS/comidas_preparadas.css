@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: nunito;
+}
+.navbar{
+    width: 100% !important;
+    height:155px;
+   
+}
+
+.banner{
+    margin:top =0px;
+    display: flex;
+    width: 100%;
+    height: 400px; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner img{
+    
+   margin-top: 0px;
+    border-radius: 0px;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter:blur(30px);
+}
+
+.banner H1{
+    scale: 3;
+    position: absolute;
+    display: flex;
+    text-align: center;
+    color: white;
+}
+
+
+
+.carrusel_productos{
+    display: flex;
+    width: 100% !important;
+    height: 380px;
+}
+
+.grid_products{
+    padding: 0%;
+    width: 100% !important;
+    height: 1000px;  
+}
+
+.footer{
+    width: 100% !important;
+    height:250px;
+}

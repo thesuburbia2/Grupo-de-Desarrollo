@@ -30,11 +30,12 @@ body {
     padding: 20px; /* Aumenta el padding para mejor proporción */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
+    transition: transform 0.3s ease;
     text-align: center;
 }
 
 .product-card:hover {
-    transform: translateY(-10px); /* Efecto hover al pasar sobre la tarjeta */
+    transform:scale(1.05)/* Efecto hover al pasar sobre la tarjeta */
 }
 
 .discount-banner {
