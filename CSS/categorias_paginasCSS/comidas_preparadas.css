@@ -21,24 +21,35 @@
     text-align: center;
 }
 
-.banner img{
-    
-   margin-top: 0px;
-    border-radius: 0px;
+.banner img {
+    margin-top: 20px;
+    border-radius: 50px;
     display: flex;
-    width: 100%;
+    width: 90%;
     height: 400px;
     object-fit: cover;
-    filter:blur(30px);
+    filter: blur(5px) brightness(0.7); /* Ajuste del difuminado más oscuro */
 }
 
-.banner H1{
+.banner h1 {
     scale: 3;
     position: absolute;
     display: flex;
     text-align: center;
     color: white;
 }
+
+.banner h2 {
+    position: absolute;
+    margin-top: 130px; /* Ajusta este valor según la posición deseada */
+    display: flex;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.5rem; /* Tamaño del subtítulo */
+    font-family: 'Nunito', sans-serif;
+}
+
 
 
 

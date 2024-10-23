@@ -51,7 +51,9 @@ body {
 }
 
 .product-image {
-    width: 100%;
+    width: 235px;
+    height: 217px;
+    object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
 
