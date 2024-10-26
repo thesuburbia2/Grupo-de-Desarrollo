@@ -59,10 +59,15 @@
     height: 380px;
 }
 
+.categories{
+    display: flex;
+    width: 100% !important;
+    height: 380px;
+}
 .grid_products{
     padding: 0%;
     width: 100% !important;
-    height: 1000px;  
+    height: 900px;  
 }
 
 .footer{
