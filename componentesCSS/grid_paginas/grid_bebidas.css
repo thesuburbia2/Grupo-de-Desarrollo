@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Nunito;
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centra el contenido de la página */
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 columnas para mayor tamaño */
+    gap: 20px; /* Reduce el espacio entre las tarjetas */
+    justify-content: center; /* Centra las tarjetas en el contenedor */
+    margin: 0 auto; /* Centra el grid en la página */
+}
+
+.product-card {
+    scale: 90%; /* Aumenta ligeramente el tamaño de las tarjetas */
+    background-color: #fdd6b2;
+    border-radius: 15px;
+    width: 280px; /* Aumenta el ancho de las tarjetas */
+    height: 400px; /* Aumenta la altura de las tarjetas */
+    padding: 20px; /* Aumenta el padding para mejor proporción */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+    text-align: start;
+}
+
+.product-card:hover {
+    transform:scale(1.05)/* Efecto hover al pasar sobre la tarjeta */
+}
+
+.discount-banner {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #b6e388;
+    color: #3e8605;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.product-image {
+    width: 235px;
+    height: 217px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+}
+.rating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f2d8c0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4f4f4f;
+}
+
+.star {
+    color: #ffbb33;
+}
+
+.product-details h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f56004;
+}
+
+.old-price {
+    font-size: 14px;
+    color: #464646;
+    text-decoration: line-through;
+}
+
+.store-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.store-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.store-details p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: #363636;
+}
+
+.store-details span {
+    font-size: 12px;
+    color: #424242;
+}
+
+/* Hacer el diseño responsivo */
+@media (max-width: 1200px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* Cambia a 1 columna en pantallas móviles */
+    }
+}

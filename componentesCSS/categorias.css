@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit; /* Esto permite que el enlace herede el color del contenedor, opcional */
+}
+
 body {
     font-family: Nunito;
     background-color: #ffffff;
@@ -27,15 +32,13 @@ h1 {
 .categories {
     display: flex;
     justify-content: space-between;
-
     flex-wrap: wrap;
 }
 
 .category {
-    scale: 75%;
+    scale: 80%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     width: 20%;
     background-color: #313131;
@@ -43,6 +46,7 @@ h1 {
     padding-bottom: 10px;
     transition: transform 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 .category img {
