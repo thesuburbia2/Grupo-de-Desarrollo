@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit; /* Esto permite que el enlace herede el color del contenedor, opcional */
+}
+
 body {
     font-family: Nunito;
     background-color: #f8f8f8;
