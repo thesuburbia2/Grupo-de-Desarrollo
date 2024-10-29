@@ -115,6 +115,8 @@
     font-size: 12px;
     color: #b6b6b6;
 }
+/*din del estilo del producto */
+
 /*Estilo de botones de incrementar o decrementar */
 .quantity-button {
             display: flex;
