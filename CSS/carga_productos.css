@@ -2,52 +2,82 @@ body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-image: url("../imagenes/producto_carga.png") ;
+
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
+    margin-top: 0px;
+   scale: 0.9;
+    width: 100%;
+    margin: 0;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.product-upload-form{
+    display: flex;
+    flex-direction: column;
+}
+
 
 .navbar {
     width: 100% !important;
-    height: 200px;
+    height: 155px;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #000000b0;
+    font-size: 70px;
 }
 
 .product-upload-form {
     background-color: rgba(255, 255, 255, 0);
-    padding: 20px;
+    padding: 50px;
     border-radius: 30px;
    
 }
 
-.form-group {
+.division {
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    gap: 50px; /* Espacio entre los .form-group dentro de .division */
+    justify-content: center; /* Centrar los .form-group dentro del contenedor principal */
     padding: 60px;
-    border: 1px solid #ff620000;
-    border-radius: 30px;
-    background-color: #fda56d; /* Color de fondo de los recuadros */
 }
+
+.form-group {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 45%; /* Ajusta el ancho para que haya espacio en los costados dentro de .division */
+    border-radius: 30px;
+    background: linear-gradient(165deg, #ff6600, #8a2be2); /* Degradado de naranja a violeta */
+    color: white; /* Cambiamos el color de texto a blanco para mejor visibilidad */
+    margin: 0; /* Quitar márgenes automáticos para que el ancho funcione con .division */
+}
+
+
+
 .label_container{
     display: flex;
     width: 45%;
     flex-direction: column;
+    padding: 30px;
    
 }
 
 .label_container h1{
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     text-align: start; 
+    
 }
 
 
@@ -57,40 +87,31 @@ label {
     justify-content: center;
     width: 100%;
     font-weight: bold;
+   
+
 }
 
 
 .label_illustration {
-    position: relative; /* Para posicionar el texto sobre la imagen */
-    width: 40%;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    padding-left: 200px;
+   align-items: center;
     
 }
 
 .label_illustration h1{
-    color: white;
-    font-size: 20px;
-    margin-right: 100px;    
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+        
 }
 
 .icon {
-    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    width: 350px; /* Ajusta el tamaño de la imagen según sea necesario */
     height: auto; /* Mantener la proporción de la imagen */
-    padding-top: 20px;
 
 }
 
-.label_text {
-    position: absolute; /* Posicionar el texto sobre la imagen */
-    color: #ffffff; /* Color del texto */
-    font-weight: bold;
-    text-align: center; /* Centrar el texto */
-    z-index: 1; /* Asegurarse de que el texto esté por encima de la imagen */
-}
+
 
 
 
@@ -98,7 +119,7 @@ input[type="text"],
 input[type="number"],
 textarea,
 input[type="file"] {
-    width: 80%;
+    width: 150%;
     padding: 10px;
     border: 20px solid #ffffff;
     background-color: #ffffff;
@@ -107,26 +128,75 @@ input[type="file"] {
     justify-content: center;
 }
 
+
+
 textarea {
     resize: vertical; /* Permitir redimensionar verticalmente */
 }
 
 .submit-button {
-    background-color: #ff6600; /* Color principal */
+    position: relative;
     color: white;
-    padding: 20px;
+    padding: 40px;
+    border: none;
+    border-radius: 39px;
+    cursor: pointer;
+    font-size: 35px;
+    font-family: 'Nunito', sans-serif;
+    width: 700px;
+    overflow: hidden;
+    background: linear-gradient(195deg, #ff6600, #892be2);
+    transition: color 0.9s ease; /* Transición en el color del texto */
+    z-index: 1;
+}
+
+.submit-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(195deg, #892be2, #ff6600); /* Degradado para el hover */
+    transition: opacity 0.5s ease;
+    opacity: 0; /* Oculto inicialmente */
+    z-index: -1; /* Detrás del contenido */
+    border-radius: 39px; /* Coincide con el botón */
+}
+
+.submit-button:hover::before {
+    opacity: 1; /* Hace visible el degradado en hover */
+}
+
+.custom-file-label {
+    background-color: #892be2;
+    color: white;
+    padding: 10px 20px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s;
+    display: inline-block; /* Para que se comporte como un botón */
+    transition: background-color 0.5s;
+    text-align: center;
 }
 
-.submit-button:hover {
-    background-color: #ff4f09; /* Color oscuro al pasar el mouse */
+.custom-file-label:hover {
+background-color: #ff6600;
 }
+
+
+
+.file-name {
+    margin-left: 10px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+
+
 
 .footer {
     width: 100% !important;
-    height: 250px;
+    height: 210px;
 }

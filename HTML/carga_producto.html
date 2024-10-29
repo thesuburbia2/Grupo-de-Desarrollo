@@ -16,80 +16,79 @@
 
     <!-- Formulario de carga de productos -->
     <div class="container">
-        <h1>Carga de Productos</h1>
+        <h1>¡Cargá acá tus productos!</h1>
         <form class="product-upload-form">
-            <div class="form-group">
 
-                <div class="label_container">
-                    <h1>Nombre del Producto</h1>
-                    <input type="text" id="nombre" name="nombre" required>   
+            <div class="division">
+                <div class="form-group">
+                    <!--campo 1-->
+                    <div class="label_container">
+                        <h1>Nombre del producto</h1>
+                        <input type="text" id="nombre" name="nombre" required>   
+                    </div>
+
+                    <div class="label_illustration">
+                        <img class="icon" src="../SVG/name.png" alt="nombre_producto">
+                        <h1>¿Que producto querés vender? Ponelo acá</h1>
+                    </div>
+                    
                 </div>
+                    <!-- campo 2 -->
+           
+                <div class="form-group">
 
-                <div class="label_illustration">
-                    <img class="icon" src="../SVG/nombre_producto.svg" alt="nombre_producto">
-                    <h1>¡Pone un nombre al producto que deseas vender!</h1>
+                    <div class="label_container">
+                        <h1>Precio</h1>
+                        <input type="text" id="nombre" name="nombre" required>   
+                    </div>
+
+                    <div class="label_illustration">
+                        <img class="icon" src="../SVG/price.png" alt="precio_producto">
+                        <h1>¡Escribí acá cual va a ser el valor de tu producto!</h1>
+                    </div>
+                    
+                </div> 
+            </div>    
+            <div class="division">
+                <div class="form-group">
+                    <!--campo 3-->
+                    <div class="label_container">
+                        <h1>Descripcion</h1>
+                        <input type="text" id="nombre" name="nombre" required>   
+                    </div>
+
+                    <div class="label_illustration">
+                        <img class="icon" src="../SVG/description.svg" alt="nombre_producto">
+                        <h1>¡Acá podes poner mas detalles sobre tu producto!</h1>
+                    </div>
+                    
                 </div>
-                
-            </div>
-            <!-- campo 1 -->
-
-            <div class="form-group">
-
-                <div class="label_container">
-                    <h1>Precio</h1>
-                    <input type="text" id="nombre" name="nombre" required>   
-                </div>
-
-                <div class="label_illustration">
-                    <img class="icon" src="../SVG/nombre_producto.svg" alt="nombre_producto">
-                    <h1>¡Pone un nombre al producto que deseas vender!</h1>
-                </div>
-                
-            </div> 
-              <!-- campo 2 -->
-            <div class="form-group">
-
-                <div class="label_container">
-                    <h1>Nombre del Producto</h1>
-                    <input type="text" id="nombre" name="nombre" required>   
-                </div>
-
-                <div class="label_illustration">
-                    <img class="icon" src="../SVG/nombre_producto.svg" alt="nombre_producto">
-                    <h1>¡Pone un nombre al producto que deseas vender!</h1>
-                </div>
-                
-            </div>
-              <!-- campo 3 -->
-             <div class="form-group">
-
-                <div class="label_container">
-                    <h1>Nombre del Producto</h1>
-                    <input type="text" id="nombre" name="nombre" required>   
-                </div>
-
-                <div class="label_illustration">
-                    <img class="icon" src="../SVG/nombre_producto.svg" alt="nombre_producto">
-                    <h1>¡Pone un nombre al producto que deseas vender!</h1>
-                </div>
-                
-            </div>
-              <!-- campo 4 -->
-             <div class="form-group">
-
-                <div class="label_container">
-                    <h1>Nombre del Producto</h1>
-                    <input type="text" id="nombre" name="nombre" required>   
-                </div>
-
-                <div class="label_illustration">
-                    <img class="icon" src="../SVG/nombre_producto.svg" alt="nombre_producto">
-                    <h1>¡Pone un nombre al producto que deseas vender!</h1>
-                </div>
-                
-            </div>
-            <button type="submit" class="submit-button">Cargar Producto</button>
+                    <!-- campo 4-->
+           
+                    <div class="form-group">
+                        <div class="label_container">
+                            <h1>Foto del producto</h1>
+                            
+                            <!-- Input de archivo oculto -->
+                            <input type="file" id="foto" name="foto" accept="image/*" required style="display: none;">
+                            
+                            <!-- Label personalizado que actúa como botón -->
+                            <label for="foto" class="custom-file-label">Seleccionar archivo</label>
+                    
+                            <!-- Span para mostrar texto estático, ya que sin JavaScript no se puede mostrar el nombre del archivo -->
+                            <span class="file-name">Ningún archivo seleccionado</span>
+                        </div>
+                    
+                        <div class="label_illustration">
+                            <img class="icon" src="../SVG/photo.png" alt="nombre_producto">
+                            <h1>Subi la foto con la que vas a vender tu producto ¡Ojo! fijate que la imagen tenga buena calidad </h1>
+                        </div>
+                    </div>
+                    
+            </div>  
+            
         </form>
+        <button type="submit" class="submit-button">¡Publicar Producto!</button>
     </div>
 
     <!-- Footer -->
