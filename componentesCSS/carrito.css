@@ -11,7 +11,20 @@
     --naranja-base:#ff6200;
     --gris-base:#D9D9D9;
     --gris-claro:#F5F5F5;
-    }
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #242424;
+     font-family: 'Nunito', sans-serif;
+}
+
+
+  
 /* Codigigo de la carta  */
 .product-card {
     background-color: #fdd6b2;
@@ -34,6 +47,18 @@
     font-size: 12px;
     font-weight: bold;
 }
+
+
+.navbar{
+    width: 100% !important;
+    height:160px;
+}
+
+.footer{
+    width: 100% !important;
+    height:250px;
+}
+
 
 .product-image {
     width: 100%;
