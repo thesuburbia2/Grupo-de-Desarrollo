@@ -5,6 +5,7 @@
     color: #242424;
 }
 .navbar{
+    display: flex;
     width: 100% !important;
     height:160px;
 }
