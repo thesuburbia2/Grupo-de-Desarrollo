@@ -15,55 +15,35 @@
 </head>
 
 <body>
- 
+    
+<div class="lista-resumen">
 
-    <h2>Tu carrito </h2>
+    
 
     <!--la lista de productos a presentar   producto -->
     <div class="listaProduct">
-       
-
-            
+        <div class="contenedor-lista">
         
+        <h2>Tu carrito </h2>
         <div class="producto">
-
             <div class="banner">
                 <a href="#">
-                    <img class="img-Banner" src="../imagenes/hamburguesa.png" alt="home banner"></div>
-                                        
+                    <img class="img-Banner" src="../imagenes/detalle_producto/Burger.png" alt="home banner"></div>                        
                 </a>
-
             <div class="CaracteristicasProduct">
                 <div class="Imagen-Y-DescripcionProduct">
-                    <div class="imagen">
-                        <a href="#">
-                            <img class="store-logo" src="../imagenes/vendedores/1900_parrilla.png" alf="<%=art[i].title%>"> 
-                        </a>
-                    </div>
+                        <div class="store-info">
+                            <img src="../../imagenes/vendedores/mcdonalds.png" alt="Mc Donald's Portal" class="store-logo">
+                            <div class="store-details">
+                                <p>Mc Donald's Portal</p>
+                                <span>Publicado hace 4 días</span>
+                            </div>
+                        </div>
                     <div class="DescripcionProduct">
-
-                        <p class="cart-titulo">Tirulo</p>
-                    
-                        <!-- Se me complico meter, un include ,dentro de otro include  -->
-                            <p class="cart-autor">Caracteristias</p>
+                        <p class="cart-titulo">Hamburguesa Extra Carne con Cheddar</p>
                     </div>
                 </div>
-
-
-                
                 <div class="botones">
-                    <!-- <form class="" action="../../cart/cantidad/<%=producto[i].ID%>/0/<%=producto[i].ID_USER%>?_method=PUT" method="POST" enctype="multipart/form-data">
-                        <button  type="submit" class="btn-">                                
-                            -
-                        </button>
-                    </form>
-
-                    <p class="cant">Cant</p>
-                    <form class="" action="../../cart/cantidad/<%=producto[i].ID%>/1/<%=producto[i].ID_USER%>?_method=PUT" method="POST" enctype="multipart/form-data">
-                        <button  type="submit" class="btn-">                                
-                            +
-                        </button>
-                    </form> -->
                     <div class="quantity-button">
                         <form class="" action="../../cart/cantidad/<%=producto[i].ID%>/0/<%=producto[i].ID_USER%>?_method=PUT" method="POST" enctype="multipart/form-data">
                             <button aria-label="Decrease quantity">-</button>
@@ -73,57 +53,41 @@
                             <button aria-label="Increase quantity">+</button>
                         </form>
                     </div>
-
-                    
-
                     <form action="../../cart/delete/<%=producto[i].ID%>/<%=producto[i].ID_USER%>?_method=DELETE" method="POST" style="display: inline-flex">
                         <button  type="submit" class="btn-trash">                                
                             🗑️
                         </button>
                     </form>
-          
                     <!-- <a class="btn-trash" href="../../cart/delete/<%=producto[i].ID%>/<%=producto[i].ID_USER%>"><i class="fa-solid fa-trash"></i></a> -->
                     <div class="price-display">
+                        <span class="discount-label">Hasta 50% Off</span>
                         <div>
-                            <span class="discount-label">Hasta 40% Off</span>
-                            <span class="original-price">$47.997</span>
-                        </div>
-                        <div class="current-price">$20.997</div>
-                    </div>
-                                               
-                </div>
-            
+                            <span class="current-price"> $4.990 </span>
+                            <span class="original-price">$10.900</span>
+                        </div>     
+                    </div>                         
+                </div>           
             </div>
-
         </div>
      
-       
         <div class="producto">
-
             <div class="banner">
                 <a href="#">
-                    <img class="img-Banner" src="../imagenes/pizza.png" alt="home banner"></div>
-                                        
+                    <img class="img-Banner" src="../imagenes/detalle_producto/coca1L.png" alt="home banner"></div>                        
                 </a>
-
             <div class="CaracteristicasProduct">
                 <div class="Imagen-Y-DescripcionProduct">
-                    <div class="imagen">
-                        <a href="#">
-                            <img class="store-logo" src="../imagenes/vendedores/1900_parrilla.png" alf="<%=art[i].title%>"> 
-                        </a>
-                    </div>
+                        <div class="store-info">
+                            <img src="../../imagenes/vendedores/company.png" alt="Kiosco Company" class="store-logo">
+                            <div class="store-details">
+                                <p>Kiosco Company</p>
+                                <span>Publicado hace 4 días</span>
+                            </div>
+                        </div>
                     <div class="DescripcionProduct">
-
-                        <p class="cart-titulo">Tirulo</p>
-                    
-                        <!-- Se me complico meter, un include ,dentro de otro include  -->
-                            <p class="cart-autor">Caracteristias</p>
+                        <p class="cart-titulo"> Coca Cola 1.5L</p>
                     </div>
                 </div>
-
-
-                
                 <div class="botones">
                     <div class="quantity-button">
                         <form class="" action="../../cart/cantidad/<%=producto[i].ID%>/0/<%=producto[i].ID_USER%>?_method=PUT" method="POST" enctype="multipart/form-data">
@@ -134,8 +98,6 @@
                             <button aria-label="Increase quantity">+</button>
                         </form>
                     </div>
-                    
-
                     <form action="../../cart/delete/<%=producto[i].ID%>/<%=producto[i].ID_USER%>?_method=DELETE" method="POST" style="display: inline-flex">
                         <button  type="submit" class="btn-trash">                                
                             🗑️
@@ -143,46 +105,34 @@
                     </form>
                     <!-- <a class="btn-trash" href="../../cart/delete/<%=producto[i].ID%>/<%=producto[i].ID_USER%>"><i class="fa-solid fa-trash"></i></a> -->
                     <div class="price-display">
+                        <span class="discount-label">Hasta 10% Off</span>
                         <div>
-                            <span class="discount-label">Hasta 40% Off</span>
-                            <span class="original-price">$47.997</span>
-                        </div>
-                        <div class="current-price">$20.997</div>
-                    </div>
-                                               
-                </div>
-            
+                            <span class="current-price"> $1.990 </span>
+                            <span class="original-price">$2.200</span>
+                        </div>     
+                    </div>                         
+                </div>           
             </div>
-
         </div>
 
-
         <div class="producto">
-
             <div class="banner">
                 <a href="#">
-                    <img class="img-Banner" src="../imagenes/picada.png" alt="home banner"></div>
-                                        
+                    <img class="img-Banner" src="../imagenes/detalle_producto/empanadas.png" alt="home banner"></div>                        
                 </a>
-
             <div class="CaracteristicasProduct">
                 <div class="Imagen-Y-DescripcionProduct">
-                    <div class="imagen">
-                        <a href="#">
-                            <img class="store-logo" src="../imagenes/vendedores/casa_folclorista.png" alf="<%=art[i].title%>"> 
-                        </a>
-                    </div>
+                        <div class="store-info">
+                            <img src="../../imagenes/vendedores/1900_parrilla.png" alt="1900 Parrilla" class="store-logo">
+                            <div class="store-details">
+                            <p>1900 Parrilla</p>
+                            <span>Publicado hace 1 día</span>
+                </div>
+                        </div>
                     <div class="DescripcionProduct">
-
-                        <p class="cart-titulo">Tirulo</p>
-                    
-                        <!-- Se me complico meter, un include ,dentro de otro include  -->
-                            <p class="cart-autor">Caracteristias</p>
+                        <p class="cart-titulo">Docena De Empanadas De Carne</p>
                     </div>
                 </div>
-
-
-                
                 <div class="botones">
                     <div class="quantity-button">
                         <form class="" action="../../cart/cantidad/<%=producto[i].ID%>/0/<%=producto[i].ID_USER%>?_method=PUT" method="POST" enctype="multipart/form-data">
@@ -193,33 +143,31 @@
                             <button aria-label="Increase quantity">+</button>
                         </form>
                     </div>
-                    
-
                     <form action="../../cart/delete/<%=producto[i].ID%>/<%=producto[i].ID_USER%>?_method=DELETE" method="POST" style="display: inline-flex">
                         <button  type="submit" class="btn-trash">                                
                             🗑️
                         </button>
                     </form>
+                    <!-- <a class="btn-trash" href="../../cart/delete/<%=producto[i].ID%>/<%=producto[i].ID_USER%>"><i class="fa-solid fa-trash"></i></a> -->
                     <div class="price-display">
+                        <span class="discount-label">Hasta 25% Off</span>
                         <div>
-                            <span class="discount-label">Hasta 40% Off</span>
-                            <span class="original-price">$47.997</span>
-                        </div>
-                        <div class="current-price">$20.997</div>
-                    </div>
-                                               
-                </div>
-            
+                            <span class="current-price"> $3.500 </span>
+                            <span class="original-price">$4.500</span>
+                        </div>     
+                    </div>                         
+                </div>           
             </div>
-
         </div>
+       
+        
+
     </div>
+        
+</div>
 
-    <!--hago el resumen de compra y subgerencias -->
-    <div class="mainInferior">
-
-
-<div class="content-resumen">
+    <div class="content-resumen">
+        <h2>Tu resumen </h2>
         <div class="ResumenCompra">
             <h3>Resumen de compra</h3>
             <div class="subtotal">
@@ -245,56 +193,13 @@
         </div>
     </div>
 
-      
-
-        <div class="mas-art">
-            <h2 class="tlo-sug">Más Titulos </h2>
-
-        <section class="list-articulos">
-           
-            <div class="product-card">
-                <div class="discount-banner">Hasta 50% Off</div>
-                <img src="../imagenes/sushi.png" alt="Sushi Rolls de Salmón y Olivada negra" class="product-image">
-                <div class="rating">2,9/5 <span class="star">★</span></div>
-                <div class="product-details">
-                    <h3>Sushi Rolls de Salmón y Olivada negra</h3>
-                    <div class="price">
-                        <span class="current-price">$14.990</span>
-                        <span class="old-price">$30.900</span>
-                    </div>
-                </div>
-                <div class="store-info">
-                    <img src="../imagenes/vendedores/izumi_sushi.png" alt="Izumi Sushi" class="store-logo">
-                    <div class="store-details">
-                        <p>Izumi Sushi</p>
-                        <span>Publicado hace 4 días</span>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="discount-banner">Hasta 50% Off</div>
-                <img src="../imagenes/sushi.png" alt="Sushi Rolls de Salmón y Olivada negra" class="product-image">
-                <div class="rating">2,9/5 <span class="star">★</span></div>
-                <div class="product-details">
-                    <h3>Sushi Rolls de Salmón y Olivada negra</h3>
-                    <div class="price">
-                        <span class="current-price">$14.990</span>
-                        <span class="old-price">$30.900</span>
-                    </div>
-                </div>
-                <div class="store-info">
-                    <img src="../imagenes/vendedores/izumi_sushi.png" alt="Izumi Sushi" class="store-logo">
-                    <div class="store-details">
-                        <p>Izumi Sushi</p>
-                        <span>Publicado hace 4 días</span>
-                    </div>
-                </div>
-            </div>
-         
-        </section>
-
-    </div>
 </div>
+
+    <!--hago el resumen de compra y subgerencias -->
+    
+    <iframe class="mas-titulos"src="../componentesHTML/grid_inicio.html" frameborder="0"></iframe>
+    
+
 </main>
 
 <footer>
