@@ -3,352 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SNACK WAY - Página del Vendedor</title>
-    <style>
-
-
-    /*comienzo del estilo de las cartas*/
-        .product-card {
-            background-color: #fdd6b2;
-            border-radius: 15px;
-            /* width: 250px; */
-            padding: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            position: relative;
-            text-align: center;
-        }
-
-        .discount-banner {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background-color: #b6e388;
-            color: #3e8605;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        .product-image {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-
-        .rating {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: #f2d8c0;
-            padding: 5px 10px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: bold;
-            color: #4f4f4f;
-        }
-
-        .star {
-            color: #ffbb33;
-        }
-
-        .product-details {
-            text-align: left;
-            margin-bottom: 15px;
-        }
-
-        .product-details h3 {
-            font-size: 16px;
-            font-weight: 500;
-            margin-bottom: 10px;
-            color: #4f4f4f;
-        }
-
-        .price {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .current-price {
-            font-size: 18px;
-            font-weight: bold;
-            color: #ff6200;
-        }
-
-        .old-price {
-            font-size: 14px;
-            color: #b6b6b6;
-            text-decoration: line-through;
-        }
-
-        .store-info {
-            display: flex;
-            align-items: center;
-            margin-top: 10px;
-        }
-
-        .store-logo {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-
-        .store-details {
-            text-align: left;
-        }
-
-        .store-details p {
-            font-size: 14px;
-            font-weight: bold;
-            margin-bottom: 3px;
-            color: #4f4f4f;
-        }
-
-        .store-details span {
-            font-size: 12px;
-            color: #b6b6b6;
-        }
-    /*fin del  estilo de las cartas*/
-
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: white;
-        }
-        .header {
-            background-color: #ff6600;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .search-bar {
-            padding: 5px;
-            border-radius: 15px;
-            border: none;
-            width: 200px;
-        }
-        .profile-button {
-            background-color: white;
-            color: #ff6600;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 15px;
-            cursor: pointer;
-        }
-        .banner {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .vendor-avatar {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 4px solid white;
-            margin: -50px auto 0;
-            display: block;
-        }
-        .vendor-name {
-            text-align: center;
-            margin-top: 10px;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .control-panel {
-            background-color: #e0e0e0;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        .control-panel h2 {
-            margin-top: 0;
-        }
-        .control-options {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-        }
-        .control-option {
-            background-color: #f0f0f0;
-            padding: 15px;
-            border-radius: 5px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100px;
-        }
-        .control-option i {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        .product-grid {
-
-            display: flex;
-            justify-content: space-around;
-        }
-        .categoria{
-            text-align: center
-        }
-
-        /*comienzo del estilo del panel de control*/
-        .control-panel {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 30px;
-            background-color: #f0f0f0;
-            border-radius: 15px;
-        }
-
-        .control-panel-header {
-            margin-bottom: 30px;
-        }
-
-        .control-panel-title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .control-panel-description {
-            color: #666;
-            font-size: 16px;
-        }
-
-        .control-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .control-item {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .control-item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-        }
-
-        .control-item-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-
-        .control-icon {
-            width: 40px;
-            height: 40px;
-            background-color: #f8f8f8;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 15px;
-        }
-
-        .control-icon i {
-            font-size: 20px;
-            color: #666;
-        }
-
-        .control-title {
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .control-description {
-            color: #666;
-            font-size: 14px;
-            line-height: 1.5;
-        }
-        /*fin del estilo del panel de control*/
-
-  
-
-
-
-    </style>
+    <title>SNACK WAY - Perfil de Usuario</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/usuario.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">SNACK WAY</div>
-        <input type="text" class="search-bar" placeholder="Buscar producto...">
-        <div>
-            <span>🛒</span>
-            <button class="profile-button">Mi Perfil</button>
-        </div>
-    </header>
-
-    <img src="../imagenes/vendedores/mcdonalds.png" alt="Banner" class="banner">
-    <img src="../imagenes/vendedores/mcdonalds.png"Vendor Avatar" class="vendor-avatar">
-    <h2 class="vendor-name">Nombre del usuario</h2>
+    <iframe class="navbar" src="../componentesHTML/navbar.html" frameborder="0"></iframe>
+    
+    <div class="user-header">
+        <img src="../imagenes/avatar-user.jpg" alt="Avatar de usuario" class="user-avatar">
+        <h2 class="user-name">Nombre del usuario</h2>
+    </div>
 
     <div class="control-panel">
         <div class="control-panel-header">
-            <h1 class="control-panel-title">Configuracion</h1>
+            <h1 class="control-panel-title">Configuración</h1>
             <p class="control-panel-description">
-                Estos datos son de importacia para una atención personalisada             </p>
+                Estos datos son de importancia para una atención personalizada             
+            </p>
         </div>
 
         <div class="control-grid">
-            <div class="control-item">
+            <div class="control-item" onclick="window.location.href='#'">
                 <div class="control-item-header">
                     <div class="control-icon">
-                        <i class="fas fa-truck"></i>
+                        <i class="fas fa-user"></i>
                     </div>
                     <h2 class="control-title">Datos de la cuenta</h2>
                 </div>
                 <p class="control-description">
-                    Nombre y apellido, edad , genero, gmail, número de telefono                </p>
+                    Nombre y apellido, edad, género, email, número de teléfono                
+                </p>
             </div>
 
-            <div class="control-item">
+            <div class="control-item" onclick="window.location.href='#'">
                 <div class="control-item-header">
                     <div class="control-icon">
-                        <i class="fas fa-store"></i>
+                        <i class="fas fa-map-marked-alt"></i>
                     </div>
-                    <h2 class="control-title">Dirección/ ciudad</h2>
+                    <h2 class="control-title">Dirección/ciudad</h2>
                 </div>
                 <p class="control-description">
-                    ciudad, localidad, barrio                </p>
+                    Ciudad, localidad, barrio                
+                </p>
             </div>
 
-            <div class="control-item">
+            <div class="control-item" onclick="window.location.href='#'">
                 <div class="control-item-header">
                     <div class="control-icon">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="fas fa-bell"></i>
                     </div>
                     <h2 class="control-title">Comunicaciones</h2>
                 </div>
                 <p class="control-description">
-                    Elegí qué tipo de información querés recibir y por cuales medios.                </p>
+                    Elegí qué tipo de información querés recibir y por cuáles medios.                
+                </p>
             </div>
-
-
         </div>
     </div>
-
+    
         <h2 class="categoria">Ofertas recomendadas</h2>
-
 
         <div class="product-grid">
 
@@ -434,7 +149,7 @@
            
         </div>
 
-        <h2 class="categoria">Productos favoritos</h2>
+        <h2 class="categoria" id="favoritos">Productos favoritos</h2>
 
         <div class="product-grid">
 
@@ -517,13 +232,21 @@
                     </div>
                 </div>
             </div>
-            <!-- Repeat product-card div 3 more times for a total of 4 cards -->
         </div>
-
-
-
-            
-  
-        
     </div>
+    <footer>
+        <iframe class="footer" src="../componentesHTML/footer.html" frameborder="0"></iframe>
+    </footer>
+    <script>
+    function scrollToElement(elementId) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
+    </script>
+</body>
 </html>

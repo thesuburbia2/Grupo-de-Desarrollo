@@ -11,15 +11,21 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="../HTML/home.html" target="_top"><img src="../imagenes/logo_snackway.png" alt="Logo" ></a>
+                <a href="javascript:void(0)" onclick="parent.location.href='../HTML/home.html'">
+                    <img src="../imagenes/logo_snackway.png" alt="Logo">
+                </a>
             </div>
             <div class="search-bar">
                 <input type="text" placeholder="¿Qué tenés ganas de comer hoy?">
             </div>
             <div class="nav-icons">
-                <a href="../HTML/carrito.html"target="_top"><img src="../SVG/shopping_cart.svg" alt="Carrito"></a>
-                <a href="#"><img src="../SVG/heart.svg" alt="Favoritos"></a>
-                <button class="profile-btn">Mi Perfil</button>
+                <a href="javascript:void(0)" onclick="parent.location.href='../HTML/carrito.html'">
+                    <img src="../SVG/shopping_cart.svg" alt="Carrito">
+                </a>
+                <a href="javascript:void(0)" onclick="parent.location.href='../HTML/usuario.html#favoritos'; setTimeout(() => parent.scrollToElement('favoritos'), 100)">
+                    <img src="../SVG/heart.svg" alt="Favoritos">
+                </a>
+                <button class="profile-btn" onclick="parent.location.href='../HTML/usuario.html'">Mi Perfil</button>
             </div>
         </nav>
     </header>
