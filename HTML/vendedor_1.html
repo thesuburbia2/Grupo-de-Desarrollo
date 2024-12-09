@@ -281,25 +281,44 @@
         }
         /*fin del estilo del panel de control*/
 
-  
 
+        .grid_products{
+            width: 100%!important;
+            height: 100%!important;
+        }
 
+        /*estilos para las importaciones */
 
+        .contenedor-mas-titulos{
+        background-color: #f8f8f8;
+        border-radius: 35px 35px;
+        padding: 30px;
+         }
+         .mas-titulos{
+            width: 100% !important;
+            height: 900px;    
+            position: relative;
+        }
+
+        .footer{
+            width: 100% !important;
+            height:200px;
+            border: 0px;
+            object-fit: cover;
+        }
+        .navbar{
+            width: 100% !important;
+            height:160px;
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <iframe class="navbar" src="../componentesHTML/navbar.html" frameborder="0"></iframe>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">SNACK WAY</div>
-        <input type="text" class="search-bar" placeholder="Buscar producto...">
-        <div>
-            <span>🛒</span>
-            <button class="profile-button">Mi Perfil</button>
-        </div>
-    </header>
+
 
     <img src="../imagenes/vendedores/mcdonalds.png" alt="Banner" class="banner">
-    <img src="../imagenes/vendedores/mcdonalds.png"Vendor Avatar" class="vendor-avatar">
+    <img src="../imagenes/vendedores/mcdonalds.png" class="vendor-avatar">
     <h2 class="vendor-name">Nombre del vendedor</h2>
 
     <div class="control-panel">
@@ -398,176 +417,17 @@
     </div>
 
         <h2 class="categoria">Promociones vigentes</h2>
-
-
-        <div class="product-grid">
-
-            <div class="product-card">
-                <div class="discount-banner">Hasta 50% Off</div>
-                <img src="../imagenes/sushi.png" alt="Sushi Rolls de Salmón y Olivada negra" class="product-image">
-                <div class="rating">2,9/5 <span class="star">★</span></div>
-                <div class="product-details">
-                    <h3>Sushi Rolls de Salmón y Olivada negra</h3>
-                    <div class="price">
-                        <span class="current-price">$14.990</span>
-                        <span class="old-price">$30.900</span>
-                    </div>
-                </div>
-                <div class="store-info">
-                    <img src="../imagenes/vendedores/izumi_sushi.png" alt="Izumi Sushi" class="store-logo">
-                    <div class="store-details">
-                        <p>Izumi Sushi</p>
-                        <span>Publicado hace 4 días</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="discount-banner">Hasta 50% Off</div>
-                <img src="../imagenes/sushi.png" alt="Sushi Rolls de Salmón y Olivada negra" class="product-image">
-                <div class="rating">2,9/5 <span class="star">★</span></div>
-                <div class="product-details">
-                    <h3>Sushi Rolls de Salmón y Olivada negra</h3>
-                    <div class="price">
-                        <span class="current-price">$14.990</span>
-                        <span class="old-price">$30.900</span>
-                    </div>
-                </div>
-                <div class="store-info">
-                    <img src="../imagenes/vendedores/izumi_sushi.png" alt="Izumi Sushi" class="store-logo">
-                    <div class="store-details">
-                        <p>Izumi Sushi</p>
-                        <span>Publicado hace 4 días</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="discount-banner">Hasta 50% Off</div>
-                <img src="../imagenes/sushi.png" alt="Sushi Rolls de Salmón y Olivada negra" class="product-image">
-                <div class="rating">2,9/5 <span class="star">★</span></div>
-                <div class="product-details">
-                    <h3>Sushi Rolls de Salmón y Olivada negra</h3>
-                    <div class="price">
-                        <span class="current-price">$14.990</span>
-                        <span class="old-price">$30.900</span>
-                    </div>
-                </div>
-                <div class="store-info">
-                    <img src="../imagenes/vendedores/izumi_sushi.png" alt="Izumi Sushi" class="store-logo">
-                    <div class="store-details">
-                        <p>Izumi Sushi</p>
-                        <span>Publicado hace 4 días</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="discount-banner">Hasta 50% Off</div>
-                <img src="../imagenes/sushi.png" alt="Sushi Rolls de Salmón y Olivada negra" class="product-image">
-                <div class="rating">2,9/5 <span class="star">★</span></div>
-                <div class="product-details">
-                    <h3>Sushi Rolls de Salmón y Olivada negra</h3>
-                    <div class="price">
-                        <span class="current-price">$14.990</span>
-                        <span class="old-price">$30.900</span>
-                    </div>
-                </div>
-                <div class="store-info">
-                    <img src="../imagenes/vendedores/izumi_sushi.png" alt="Izumi Sushi" class="store-logo">
-                    <div class="store-details">
-                        <p>Izumi Sushi</p>
-                        <span>Publicado hace 4 días</span>
-                    </div>
-                </div>
-            </div>
-           
+        <div class="contenedor-mas-titulos">
+            <iframe class="mas-titulos"src="../componentesHTML/grid_inicio.html" frameborder="0"></iframe>
         </div>
 
+
+
+
         <h2 class="categoria">Productos mas vendidos</h2>
-
-        <div class="product-grid">
-
-            <div class="product-card">
-                <div class="discount-banner">Hasta 50% Off</div>
-                <img src="../imagenes/sushi.png" alt="Sushi Rolls de Salmón y Olivada negra" class="product-image">
-                <div class="rating">2,9/5 <span class="star">★</span></div>
-                <div class="product-details">
-                    <h3>Sushi Rolls de Salmón y Olivada negra</h3>
-                    <div class="price">
-                        <span class="current-price">$14.990</span>
-                        <span class="old-price">$30.900</span>
-                    </div>
-                </div>
-                <div class="store-info">
-                    <img src="../imagenes/vendedores/izumi_sushi.png" alt="Izumi Sushi" class="store-logo">
-                    <div class="store-details">
-                        <p>Izumi Sushi</p>
-                        <span>Publicado hace 4 días</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="discount-banner">Hasta 50% Off</div>
-                <img src="../imagenes/sushi.png" alt="Sushi Rolls de Salmón y Olivada negra" class="product-image">
-                <div class="rating">2,9/5 <span class="star">★</span></div>
-                <div class="product-details">
-                    <h3>Sushi Rolls de Salmón y Olivada negra</h3>
-                    <div class="price">
-                        <span class="current-price">$14.990</span>
-                        <span class="old-price">$30.900</span>
-                    </div>
-                </div>
-                <div class="store-info">
-                    <img src="../imagenes/vendedores/izumi_sushi.png" alt="Izumi Sushi" class="store-logo">
-                    <div class="store-details">
-                        <p>Izumi Sushi</p>
-                        <span>Publicado hace 4 días</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="product-card">
-                <div class="discount-banner">Hasta 50% Off</div>
-                <img src="../imagenes/sushi.png" alt="Sushi Rolls de Salmón y Olivada negra" class="product-image">
-                <div class="rating">2,9/5 <span class="star">★</span></div>
-                <div class="product-details">
-                    <h3>Sushi Rolls de Salmón y Olivada negra</h3>
-                    <div class="price">
-                        <span class="current-price">$14.990</span>
-                        <span class="old-price">$30.900</span>
-                    </div>
-                </div>
-                <div class="store-info">
-                    <img src="../imagenes/vendedores/izumi_sushi.png" alt="Izumi Sushi" class="store-logo">
-                    <div class="store-details">
-                        <p>Izumi Sushi</p>
-                        <span>Publicado hace 4 días</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="discount-banner">Hasta 50% Off</div>
-                <img src="../imagenes/sushi.png" alt="Sushi Rolls de Salmón y Olivada negra" class="product-image">
-                <div class="rating">2,9/5 <span class="star">★</span></div>
-                <div class="product-details">
-                    <h3>Sushi Rolls de Salmón y Olivada negra</h3>
-                    <div class="price">
-                        <span class="current-price">$14.990</span>
-                        <span class="old-price">$30.900</span>
-                    </div>
-                </div>
-                <div class="store-info">
-                    <img src="../imagenes/vendedores/izumi_sushi.png" alt="Izumi Sushi" class="store-logo">
-                    <div class="store-details">
-                        <p>Izumi Sushi</p>
-                        <span>Publicado hace 4 días</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Repeat product-card div 3 more times for a total of 4 cards -->
+        <div class="contenedor-mas-titulos">
+           
+            <iframe class="mas-titulos"src="../componentesHTML/grid_inicio.html" frameborder="0"></iframe>
         </div>
 
 
@@ -576,4 +436,9 @@
   
         
     </div>
+
+
+    <footer>
+        <iframe class="footer" src="../componentesHTML/footer.html" frameborder="0"></iframe>
+    </footer>
 </html>
